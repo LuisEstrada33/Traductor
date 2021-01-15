@@ -1,0 +1,32 @@
+<%- contentFor('heros') %>
+<section class="hero">
+    <div class="hero-content">
+      <h2>Bienvenido!</h2>
+      <p>Traductor Maya/Español</p>
+  
+      <a href="/" class="btn btn-lg btn-primary">Español/Maya</a>
+      <a href="/Maya" class="btn btn-lg btn-primary">Maya/Español</a>
+    </div>
+  </section>
+  <%- contentFor('body') %>
+  <div class="jumbotron text-center">
+    <h1>Traductor de Maya a Español</h1>
+
+  <div class="row">
+    <div class="col-sm-6 col-sm-offset-3">
+      <p>Ingresa la palabra en Maya que le gustaria traducir a Español</p>
+
+      <form action="/maya" method="POST"> 
+      <!--<form action="/contacto" method="GET"> -->
+        <div class="form-group">
+            <div class="form-group">
+                <label>Palabra en Maya</label>
+                <input type="text" name="palabra1" class="form-control" value="" required placeholder="Maya" style="text-transform: lowercase;"> 
+              </div>
+          <div class="form-group text-right">
+            <button type="submit" class="btn btn-primary btn-lg">Traducir</button>
+          </div> 
+      </form>
+    </div>
+  </div>
+  </div>
